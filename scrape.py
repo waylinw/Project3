@@ -57,6 +57,8 @@ def extract_listings(soup):
 
 new_listings = extract_listings(soup)
 
-fn = '/home/waylinw/Project3/' + time.strftime("%d-%m-%Y") + '.csv'
+#fn = '/home/waylinw/Project3/' + time.strftime("%d-%m-%Y") + '.csv'
+
+fn = '/Users/WaylinWang/Desktop/DATA_401/Project3/' + time.strftime("%d-%m-%Y") + '.csv'
 
 new_listings.to_csv(fn)
